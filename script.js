@@ -1,5 +1,6 @@
-document.addEventListener('DOMContentLoaded'){
+document.addEventListener('DOMContentLoaded');
 
+{
 let counter=document.getElementById('c1');
 let count=1;
 let interval = setInterval(() => {
