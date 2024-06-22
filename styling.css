@@ -444,6 +444,8 @@ a:hover::after {
     }
 }
 
+/* below services */
+
 .below-s {
     margin-top: 100px;
     background-color: #859cf7;
@@ -487,6 +489,7 @@ a:hover::after {
 }
 
 /*Projects section start from here*/
+
 .projects {
     .info {
         padding-top: 20px;
