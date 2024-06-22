@@ -56,17 +56,17 @@ header {
     margin-right: 120px;
 }
 
-a {
+.nv {
     margin: 20px;
     font-size: 15px;
     font-style: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
     color: black;
-    text-decoration: none;
+    text-decoration: none
 }
 
-a:hover::after {
+.nv:hover::after {
     content: "";
     position: absolute;
     right: 0;
@@ -566,12 +566,13 @@ a:hover::after {
 
 /*Our blog section */
 
-.blogs{
+.blogs {
     background-color: #e4f1f7;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 200px;
 
     .info {
         padding-top: 20px;
@@ -597,17 +598,73 @@ a:hover::after {
         }
     }
 
-    .blogs-info{
-        border: 1px solid black;
+    .blogs-info {
+        
         width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 500px;
+        
+
+        .boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            margin: 0 10px 0 10px;
+            .img a img {
+                text-decoration: none;
+                overflow: hidden;
+                width: 350px;   
+            }
+            .below-img {
+                margin-left: 8%;
+                width: 350px;
+                line-height: 30px;
+                
+            }
+        }
     }
 }
 
+/*Contact Us section*/
+.contact-us{
+    .info {
+        padding-top: 20px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
+        strong {
+            font-size: 40px;
+            
+        }
+
+        P:first-child {
+            color: #859cf7;
+            letter-spacing: 2px;
+        }
+
+        P:last-child {
+            color: #808080;
+            font-size: 19px;
+
+        }
+    }
+    .cont-info{
+        .form{
+            background-color: #8aa0f7;
+            border-radius: 2px; 
+        }
+        .details{
+
+        }
+    }
+}
 
 
 /*Footer section start from there*/
