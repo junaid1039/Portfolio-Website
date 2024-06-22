@@ -25,14 +25,15 @@ body {
 
 }
 
-header {
+#header {
     position: fixed;
     height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: right;
-    z-index: 1000;
+    transition: 0.5s ease-in-out;
+    z-index: 10;
 
 }
 
@@ -661,7 +662,7 @@ header {
             border-radius: 2px; 
         }
         .details{
-
+                background-color: #859cf7;
         }
     }
 }
