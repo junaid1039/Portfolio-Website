@@ -565,6 +565,7 @@ a:hover::after {
 
 .blogs {
     background-color: #e4f1f7;
+
     .info {
         padding-top: 20px;
         height: 300px;
@@ -572,6 +573,7 @@ a:hover::after {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         strong {
             font-size: 40px;
         }
@@ -587,28 +589,34 @@ a:hover::after {
 
         }
     }
-    .blogs-info{
+
+    .blogs-info {
         border: 1px solid black;
         width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
-        .box{
+
+        .box {
             width: 25%;
             border: 1px solid black;
-            #ancher{
+
+            #ancher {
                 text-decoration: none;
                 width: 100%;
             }
-            p{
+
+            p {
                 color: #859cf7;
                 margin-left: 6%;
             }
-            strong{
+
+            strong {
                 font-size: 20px;
-                margin-left: 6% ;
+                margin-left: 6%;
             }
-            p:last-child{
+
+            p:last-child {
                 color: #7a7a7a;
             }
         }
