@@ -566,8 +566,12 @@ a:hover::after {
 
 /*Our blog section */
 
-.blogs {
+.blogs{
     background-color: #e4f1f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .info {
         padding-top: 20px;
@@ -593,36 +597,13 @@ a:hover::after {
         }
     }
 
-    .blogs-info {
+    .blogs-info{
         border: 1px solid black;
         width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
-
-        .box {
-            width: 25%;
-            border: 1px solid black;
-
-            #ancher {
-                text-decoration: none;
-                width: 100%;
-            }
-
-            p {
-                color: #859cf7;
-                margin-left: 6%;
-            }
-
-            strong {
-                font-size: 20px;
-                margin-left: 6%;
-            }
-
-            p:last-child {
-                color: #7a7a7a;
-            }
-        }
+        height: 500px;
     }
 }
 
