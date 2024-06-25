@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Scroll to section-2 when needed
-    window.scrollToSection2 = () => {
+    window.onscroll = ('section-2') => {
         sectionto();
     };
 
