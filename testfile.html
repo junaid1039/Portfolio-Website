@@ -1,83 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            background-color: #333;
-            transition: background-color 0.3s;
-            z-index: 1000;
-        }
-        #logo {
-            float: left;
-            padding: 10px;
-        }
-        #menu {
-            float: right;
-            padding: 10px;
-        }
-        .nv {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .home-section {
-            padding-top: 80px; /* To avoid content being hidden behind the fixed header */
-        }
-        .forground {
-            padding: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Animation</title>
+  <style>
+    /* CSS for the animation */
+    .animate {
+      opacity: 0;
+      transition: opacity 1s;
+    }
+
+    .animate.fade-in {
+      opacity: 1;
+    }
+
+    /* Additional styles for demonstration */
+    .section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    .section:nth-child(even) {
+      background-color: #d6ff20;
+    }
+
+    .section:nth-child(odd) {
+      background-color: #ff4c4c;
+    }
+  </style>
 </head>
 <body>
-    <section class="home-section" id="home">
-        <header id="header">
-            <div id="logo">
-                <img id="logo-img" src="media files/logo.png" alt="Logo">
-            </div>
-            <div id="menu">
-                <a class="nv" href="#home">HOME</a>
-                <a class="nv" href="#about">ABOUT</a>
-                <a class="nv" href="#skills">SKILLS</a>
-                <a class="nv" href="#services">SERVICES</a>
-                <a class="nv" href="#projects">PROJECTS</a>
-                <a class="nv" href="#blog">BLOG</a>
-                <a class="nv" href="#contact">CONTACT</a>
-            </div>
-        </header>
-        <div class="forground">
-            <div class="home-text">
-                <p class="hh">Hello! This is JUNAID</p>
-                <h1>Creative<span class="hs"> Website</span> <br>Developer & Designer.</h1>
-                <div class="button">
-                    <button class="btn">Hire me</button>
-                    <button class="btn1" onclick="window.open('https://drive.google.com/file/d/1n1tJLgb2RuIRCQf5DKYvNOnfFQHqN7jd/view?usp=sharing')">Download CV</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script>
-        window.onscroll = () => {
-            scrollFunction();
-        };
 
-        function scrollFunction() {
-            var header = document.getElementById('header');
-            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-                header.style.backgroundColor = "#FFFFFF"; // Change to white when scrolled down
-            } else {
-                header.style.backgroundColor = "#333"; // Default color when at the top
-            }
-        }
-    </script>
+<div id="section1" class="section animate">Section 1</div>
+<div id="section2" class="section animate">Section 2</div>
+<div id="section3" class="section animate">Section 3</div>
+
+<script>
+  // JavaScript to add animation class when in view
+  const sections = document.querySelectorAll('.animate');
+
+  function animateOnScroll() {
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop < windowHeight) {
+        section.classList.add('fade-in');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animateOnScroll);
+</script>
+
 </body>
 </html>

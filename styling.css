@@ -74,7 +74,7 @@ body {
     left: 0;
     bottom: -4px;
     height: 2px;
-    background-color: rgb(4, 134, 241);
+    background-color: #0486f1;
 }
 
 
@@ -321,29 +321,58 @@ body {
     .grid-boxes {
         display: flex;
         flex-direction: column;
+        align-items: center;
         background-color: white;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-
         .heading {
             display: flex;
             justify-content: center;
             margin-top: 20px;
             font-size: 23px;
         }
-
-        .inside-items {
+        .circle{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
             display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #56b3ff;
+            margin-top: 7%;
+            
+        }
+        .c1{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: conic-gradient(transparent 0%, transparent 95%, rgb(231, 231, 231) 95%, rgb(231, 231, 231) 100%);
+        }
+        .c2{
+            height: 135px;
+            width: 135px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            display: flex;
+                justify-content: center;
+                align-items: center;
+        }
 
-            .items {
-                width: 50%;
-                font-size: 35px;
-                color: #859cf7;
+        .items {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            margin-top: 4%;
+            .in-item{
+                height: 80%;
+                width: 50%; 
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
-
         }
     }
 
@@ -600,13 +629,13 @@ body {
     }
 
     .blogs-info {
-        
+
         width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 500px;
-        
+
 
         .boxes {
             display: flex;
@@ -615,23 +644,30 @@ body {
             align-items: center;
             width: auto;
             margin: 0 10px 0 10px;
+
             .img a img {
                 text-decoration: none;
                 overflow: hidden;
-                width: 350px;   
+                width: 350px;
             }
+
             .below-img {
                 margin-left: 8%;
                 width: 350px;
                 line-height: 30px;
-                
+
             }
         }
     }
 }
 
 /*Contact Us section*/
-.contact-us{
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     .info {
         padding-top: 20px;
         height: 300px;
@@ -642,7 +678,7 @@ body {
 
         strong {
             font-size: 40px;
-            
+
         }
 
         P:first-child {
@@ -656,16 +692,72 @@ body {
 
         }
     }
-    .cont-info{
-        .form{
-            background-color: #8aa0f7;
-            border-radius: 2px; 
-        }
-        .details{
-                background-color: #859cf7;
+
+    .contact-info {
+        display: flex;
+        height: 500px;
+        width: 85%;
+
+        .form {
+            width: 60%;
+            height: 100%;
+            background-color: #e4f1f7;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .form-in {
+                width: 90%;
+                height: auto;
+
+                .ne{
+                    display: flex;
+                    align-items: center;
+
+                    .name{
+                        height: 50px;
+                         width: 45%;
+                    }
+                    .mail{
+                        height: 50px; 
+                        width: 47%; 
+                        margin-left: 26px;
+                    }
+
+                }
+                .subject{
+                    height: 50px; 
+                    width: 98.1%; 
+                    margin-top:30px;
+                }
+                .msg{
+                    width: 98.1%; 
+                    margin-top:30px;
+                }
+                .submit-btn{
+                    width: 30%;
+                    height: 50px;
+                    background-color: #859cf7;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    margin-top: 30px;
+                }
+            }
         }
     }
+
+    .details {
+        .rows {
+            display: flex;
+            margin: 60px 0 0 30px;
+
+        }
+
+    }
 }
+
 
 
 /*Footer section start from there*/
@@ -709,6 +801,8 @@ footer {
     display: block;
     font-size: 19px;
     width: fit-content;
+    text-decoration: none;
+    margin-top: 19px;
 }
 
 .services {
