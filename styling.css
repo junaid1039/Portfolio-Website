@@ -7,72 +7,67 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.container {
-    width: auto;
-    height: auto;
-    margin: 0;
-}
-
 .home-section {
-    width: auto;
+    width: 100%;
     height: 750px;
     background-image: url("Media files/background\ img.png");
     background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
-    justify-content: left;
     align-items: center;
     position: relative;
 
 }
 
 #header {
+    z-index: 100;
+    width: 100%;
     position: fixed;
     height: 70px;
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: right;
-    transition: 0.5s ease-in-out;
-    z-index: 10;
+    justify-content: center;
 
 }
 
 #logo {
-    height: 50px;
-    width: 30%;
-
-    #logo-img {
-        height: 50px;
-        margin-left: 90px;
-        align-items: center;
-    }
+    height: 70px;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 900;
+    
+}
+.menu-btn{
+    display: none;
 }
 
-#menu {
+#nav {
     height: 50px;
-    width: 70%;
     display: flex;
-    justify-content: right;
-    align-items: center;
-    margin-right: 120px;
+    margin-left: 30%;
 }
 
 .nv {
     margin: 20px;
     font-size: 15px;
     font-style: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
     position: relative;
     color: black;
     text-decoration: none
 }
+.nv a{
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 1px;
+}
 
-.nv:hover::after {
+a:hover::after {
     content: "";
     position: absolute;
     right: 0;
     left: 0;
-    bottom: -4px;
+    bottom: -13px;
     height: 2px;
     background-color: #0486f1;
 }
@@ -84,6 +79,7 @@ body {
     position: absolute;
     background-image: url("media files/design\ img.png");
     background-repeat: no-repeat;
+    background-size: cover;
 
     .home-text {
         text-transform: uppercase;
@@ -164,7 +160,7 @@ body {
 }
 
 #sub-sec2 {
-    height: 90px;
+    height: 90p;
     width: 80%;
     display: flex;
 
@@ -205,20 +201,20 @@ body {
 
 .sub-sec3 {
     width: 90%;
-    height: 700px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 0 30px 0;
 
     .inside-sec3 {
-        height: 100%;
-        box-shadow: -15px 0 15px -5px rgba(0, 0, 0, 0.2);
-    }
-
-    #sec3-1 {
-        background-image: url('Media files/about\ me.png');
+        width: 35%;
+        height: 500px; /* Add a height to make the div visible */
+        background-image: url('Media files/about.png');
         background-size: cover;
-
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: -15px 0 15px -5px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -276,6 +272,13 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    .dives{
+        color: #000000;
+        width:30%;
+        display:flex;
+        align-items:center;
+        font-size:20px;
+    }
 }
 
 /*Services section start from there*/
@@ -419,19 +422,20 @@ body {
         .box {
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 
-            div {
-                height: 90px;
-                width: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                background-color: #859cf7;
-                margin: -35px 0px 0px 40px;
+                div {
+                    height: 90px;
+                    width: 90px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background-color: #859cf7;
+                    margin-left: 40px;
 
-                span {
-                    font-size: 30px;
-                    color: white;
+                    span {
+                        font-size: 30px;
+                        color: white;
+                    }
                 }
             }
 
@@ -472,7 +476,7 @@ body {
             }
         }
     }
-}
+
 
 /* below services */
 
@@ -825,6 +829,9 @@ h4 {
     padding-top: 10px;
     color: #B3B5B8;
     letter-spacing: 1px;
+    p{
+        text-align: center;
+    }
 }
 
-/*Responsiveness of Website*/
+

@@ -5,126 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Navigation with Collapse</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    #header {
+    z-index: 100;
+    position: fixed;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 100%;
 
-    header {
-      background-color: #333;
-      color: white;
-      padding: 15px;
-    }
+}
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+#logo {
+    height: 70px;
+    width: 150px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
 
-    .brand {
-      color: white;
-      text-decoration: none;
-      font-size: 1.5em;
-    }
+#nav {
+    height: 50px;
+    display: flex;
+}
 
-    .nav-menu {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .nav-item {
-      margin-left: 20px;
-    }
-
-    .nav-link {
-      color: white;
-      text-decoration: none;
-    }
-
-    .nav-toggle {
-      display: none;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 30px;
-      height: 21px;
-      border: none;
-      background: transparent;
-      cursor: pointer;
-    }
-
-    .hamburger {
-      width: 30px;
-      height: 3px;
-      background: white;
-    }
-
-    .hamburger::before,
-    .hamburger::after {
-      content: '';
-      width: 30px;
-      height: 3px;
-      background: white;
-      display: block;
-    }
-
-    .hamburger::before {
-      transform: translateY(-8px);
-    }
-
-    .hamburger::after {
-      transform: translateY(5px);
-    }
-
-    @media (max-width: 768px) {
-      .nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .nav-item {
-        margin: 10px 0;
-        text-align: center;
-      }
-
-      .nav-toggle {
-        display: flex;
-      }
-
-      .nav-menu.active {
-        display: flex;
-      }
-    }
+.nv {
+    margin: 20px;
+    font-size: 15px;
+    font-style: normal;
+    list-style: none;
+    position: relative;
+    color: black;
+    text-decoration: none
+}
+.nv a{
+    text-decoration: none;
+}
   </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="#" class="brand">Brand</a>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const navToggle = document.querySelector('.nav-toggle');
-      const navMenu = document.querySelector('.nav-menu');
-
-      navToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-      });
-    });
-  </script>
+  <header id="header">
+    <div id="logo">JR.</div>
+    <ul id="nav">
+        <li class="nv"><a href="#home">HOME</a></li>
+        <li class="nv"><a href="#about">ABOUT</a></li>
+        <li class="nv"><a href="#skills">SKILLS</a></li>
+        <li class="nv"><a href="#services">SERVICES</a></li>
+        <li class="nv"><a href="#projects">PROJECTS</a></li>
+        <li class="nv"><a href="#blog">BLOG</a></li>
+        <li class="nv"><a href="#contact">CONTACT</a></li>
+    </ul>
+</header>
 </body>
 </html>
