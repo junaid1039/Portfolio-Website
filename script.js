@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+
+    function show(){
+        var shoo = document.getElementsByID('menu');
+        shoo.innerText='left: 0px'
+    }
+
     //header background color changing on scrolling
     window.onscroll = () => {
         scrollFunction();
