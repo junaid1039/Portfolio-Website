@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function scrollFunction() {
-        var header = document.getElementById('header');
+        var header = document.getElementsByClassName('header');
         if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
             header.style.backgroundColor = "#FFFFFF"; // Change to white when scrolled down
         } else {
