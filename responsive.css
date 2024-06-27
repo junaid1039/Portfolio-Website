@@ -1,15 +1,6 @@
 /* responsive.css*/
 
 @media(max-width: 425px) {
-
-    html {
-        scroll-behavior: smooth;
-    }
-    
-    body {
-        margin: 0;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
     
     .home-section {
         width: auto;
@@ -39,6 +30,9 @@
         transition: transform 0.3s ease-in-out;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         background-color: #000000;
+      }
+      .logo a{
+        color: white;
       }
     
       .header{

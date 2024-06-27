@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 .home-section {
@@ -36,7 +36,7 @@ body {
   .logo a {
     font-size: 40px;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
   }
   
@@ -95,6 +95,7 @@ a:hover::after {
 
 
 .forground {
+    top: 0;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -110,7 +111,6 @@ a:hover::after {
         flex-direction: column;
         justify-content: center;
         padding-left: 90px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         transform: translateY(50px);
         animation: fadeInUp 1s ease forwards;
     }
@@ -118,14 +118,14 @@ a:hover::after {
     .hh {
         letter-spacing: 3px;
         color: #8aa0f7;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
         text-transform: capitalize;
     }
 
     h1 {
         color: #000000;
-        font-size: 62px;
+        font-size: 52px;
         margin-top: -5px;
         text-transform: capitalize;
     }
@@ -471,7 +471,6 @@ a:hover::after {
                 color: #7a7a7a;
                 line-height: 30px;
                 margin-left: 10%;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
         }
 
