@@ -7,167 +7,88 @@ body {
     font-family: "Poppins", Arial, sans-serif;
 }
 
-.home-section {
+.home-container{
     width: 100%;
     height: 750px;
-    background-image: url("Media files/background\ img.png");
+    background-image: url('Media files/background\ img.png');
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
-    align-items: center;
-    position: relative;
-
-}
-
-.header {
-    position: fixed;
-    top: 0;
+    background-position: right center;
+  }
+  .sub-con{
+    background-image: url('Media files/design\ img.png');
     width: 100%;
-    z-index: 1;
+    height: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
   }
   
-  nav {
+  .header{
+    width: 100%;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 7%;
   }
-  
-  .logo a {
-    font-size: 40px;
-    font-weight: bold;
-    color: #000000;
+  #bar{
+    display: none;
+    font-size: 25px;
+  }
+  .logo{
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 5%;
+  }
+  .nave{
+    margin-right: 5%;
+  a{
     text-decoration: none;
+    margin: 7px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
   }
-  
-  .logo a span {
-    color: #8739fa;
-  }
-  
-  .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
+}
+  .home-text{
+    height: 100%;
+    text-align: left;
+    padding-top: 13%;
+    padding-left: 5%;
+    p{
+      color: #8aa0f7;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    strong{
+      font-size: 50px;
+      line-height: 60px;
+      span{
+        color: #8aa0f7;
+      }
+    }
+    .btn{
+      margin-top: 4%;
+      display: flex;
+      
+        .btn1{
+          border: 2px solid #8aa0f7;
+          padding: 2px 15px 2px 15px;
+          margin-right: 20px;
+          border-radius: 10px;
+          background-color: #8aa0f7;
+          text-decoration: none;
+          color: black;
+        }
+        .btn2{
+          border: 2px solid #8aa0f7;
+          padding: 2px 11px 2px 11px;
+          border-radius: 10px;
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+        }
+    }
     
   }
-  
-  .menu a {
-    display: block;
-    padding: 7px 15px;
-    font-size: 17px;
-    font-weight: 500;
-    transition: 0.2s all ease-in-out;
-    color: #000000;
-    text-decoration: none;
-
-  }
-  
-  .menu:hover a {
-    opacity: 0.4;
-  }
-  
-  .menu a:hover {
-    opacity: 1;
-    color: #fff;
-  }
-  
-  .menu-icon {
-    display: none;
-  }
-  
-  #menu-toggle {
-    display: none;
-  }
-  
-  #menu-toggle:checked ~ .menu {
-    transform: scale(1, 1);
-  }
-
-a:hover::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: -13px;
-    height: 2px;
-}
-
-
-.forground {
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-image: url("media files/design\ img.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .home-text {
-        text-transform: uppercase;
-        height: 100%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 90px;
-        transform: translateY(50px);
-        animation: fadeInUp 1s ease forwards;
-    }
-
-    .hh {
-        letter-spacing: 3px;
-        color: #8aa0f7;
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: capitalize;
-    }
-
-    h1 {
-        color: #000000;
-        font-size: 52px;
-        margin-top: -5px;
-        text-transform: capitalize;
-    }
-
-    .hs {
-        color: #8aa0f7;
-        font-size: 62px;
-        font-weight: bold;
-        margin-top: -8px;
-        text-transform: capitalize;
-    }
-
-}
-
-.button {
-    margin-top: -30px;
-
-    .btn {
-        height: 30px;
-        width: 100px;
-        border-radius: 6px;
-        border: none;
-        background-color: #859cf7;
-        position: relative;
-    }
-
-    .btn1 {
-        height: 30px;
-        width: 100px;
-        border-radius: 6px;
-        border-color: #859cf700;
-        background-color: transparent;
-        margin-left: 10px;
-        border-color: #859cf7;
-    }
-
-    .btn1:hover {
-        background-color: #859cf7;
-        color: white;
-        border: none;
-    }
-}
 
 /*section 2 is starting from there*/
 

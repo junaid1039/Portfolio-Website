@@ -1,131 +1,103 @@
 /* responsive.css*/
-
-@media(max-width: 425px) {
-    
-    .home-section {
-        width: auto;
-        height: 550px;
-        background: none;
-        background-size: cover;
-        background-position: left;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        margin: 0;
-        align-items: center;
-        position: relative;
-        transform: 0.5s ease-in;
-    
-    }
-    
-    .menu {
-        flex-direction: column;
-        margin-left: -10%;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-        transform: scale(1, 0);
-        transform-origin: top;
-        transition: transform 0.3s ease-in-out;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+/*Tablet responsiveness*/
+@media screen and(max-width: 768px){
+    .header{
         background-color: #000000;
       }
-      .logo a{
+      .logo{
         color: white;
       }
-    
-      .header{
-        background-color: #000000;
-      }
-      .menu a {
-        margin-left: 12px;
+      #bar{
         color: white;
       }
-    
-      .menu li {
-        margin-bottom: 10px;
-      }
-    
-      .menu-icon {
+      
+      #bar{
         display: block;
-        color: #ffffff;
-        font-size: 28px;
         cursor: pointer;
+        margin-right: 5%;
       }
-    
-    .forground {
-        height: 100%;
-        width: 100%;
+      .nave{
+        height: 0px;
         position: absolute;
-        background: none;
-    
-        .home-text {
-            text-transform: uppercase;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 0px;
-            text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            transform: translateY(50px);
-            animation: fadeInUp 1s ease forwards;
-        }
-    
-        .hh {
-            letter-spacing: 3px;
-            color: #8aa0f7;
-            font-size: 16px;
-            font-weight: 700;
-            text-transform: capitalize;
-        }
-    
-        h1 {
-            color: #000000;
-            font-size: 50px;
-            margin-top: -5px;
-            text-transform: capitalize;
-        }
-    
-        .hs {
-            color: #8aa0f7;
-            font-size: 50px;
-            font-weight: bold;
-            margin-top: -8px;
-            text-transform: capitalize;
-        }
-    
+        left: 0;
+        top: 50px;
+        right: 0;
+        width: 100vw;
+        background-color: #2b2b2b;
+        transition: 0.5s ease;
+        overflow: hidden;
+      }
+      .nave.active{
+        height: 340px;
+      }
+      .nave a{
+        color: white;
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: 20px auto 0 auto;
+        transition: 1s ease;
+        opacity: 1;
+      }
+      .nave a.active{
+        opacity: 1;
+      }
+      
+      .sub-con{
+      background: none;
     }
+    .home-text{
+      margin-top: 16%;
+      p{
+        color: white;
+      }
+      strong{
+      span{
+        color: white;
+      }
+    }
+    .btn{
+      .btn2{
+        color: white;
+      }
+    }
+    }
+
+
+}
+
+/*Mobile Responsiveness*/
+@media screen and(max-width: 425px) {
     
-    .button {
-        margin-top: 30px;
-    
-        .btn {
-            height: 30px;
-            width: 100px;
-            border-radius: 6px;
-            border: none;
-            background-color: #859cf7;
-            position: relative;
+    .header{
+        background-color: #000000;
+      }
+      .logo{
+        color: white;
+      }
+      #bar{
+        color: white;
+      }
+      .home-text{
+      margin-top: 20%;
+      text-align: center;
+      padding-left: 0;
+      p{
+        color: #000000;
+      }
+      strong{
+        color: white;
+        font-size: 35px;
+        span{
+          color: #000000;
         }
-    
-        .btn1 {
-            height: 30px;
-            width: 100px;
-            border-radius: 6px;
-            border-color: #859cf700;
-            background-color: transparent;
-            margin-left: 10px;
-            border-color: #859cf7;
-        }
-    
-        .btn1:hover {
-            background-color: #859cf7;
-            color: white;
-            border: none;
-        }
+      }
+      .btn{
+        margin-top: 16%;
+        display: flex;
+        justify-content: center;
+      
+    }
     }
     
     /*section 2 is starting from there*/

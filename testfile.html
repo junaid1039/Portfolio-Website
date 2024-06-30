@@ -3,59 +3,229 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navigation with Collapse</title>
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <style>
-    #header {
-    z-index: 100;
-    position: fixed;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+    .home-container{
+      width: 100%;
+      height: 750px;
+      background-image: url('Media files/background\ img.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+    .sub-con{
+      background-image: url('Media files/design\ img.png');
+      width: 100%;
+      height: 100%;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
     
-    width: 100%;
+    .header{
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #bar{
+      display: none;
+      font-size: 25px;
+    }
+    .logo{
+      font-size: 30px;
+      font-weight: 900;
+      margin-left: 5%;
+    }
+    .nave{
+      margin-right: 5%;
+    a{
+      text-decoration: none;
+      margin: 7px;
+      color: black;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+    .home-text{
+      height: 100%;
+      text-align: left;
+      padding-top: 10%;
+      padding-left: 5%;
+      p{
+        color: #8aa0f7;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+      strong{
+        font-size: 50px;
+        line-height: 60px;
+        span{
+          color: #8aa0f7;
+        }
+      }
+      .btn{
+        margin-top: 4%;
+        display: flex;
+        
+          .btn1{
+            border: 2px solid #8aa0f7;
+            padding: 2px 15px 2px 15px;
+            margin-right: 20px;
+            border-radius: 10px;
+            background-color: #8aa0f7;
+            text-decoration: none;
+            color: black;
+          }
+          .btn2{
+            border: 2px solid #8aa0f7;
+            padding: 2px 11px 2px 11px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+          }
+      }
+      
+    }
 
-}
+    @media screen and (max-width: 768px ){
+      .header{
+        background-color: #000000;
+      }
+      .logo{
+        color: white;
+      }
+      #bar{
+        color: white;
+      }
+      
+      #bar{
+        display: block;
+        cursor: pointer;
+        margin-right: 5%;
+      }
+      .nave{
+        height: 0px;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        right: 0;
+        width: 100vw;
+        background-color: #2b2b2b;
+        transition: 0.5s ease;
+        overflow: hidden;
+      }
+      .nave.active{
+        height: 340px;
+      }
+      .nave a{
+        color: white;
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: 20px auto 0 auto;
+        transition: 1s ease;
+        opacity: 1;
+      }
+      .nave a.active{
+        opacity: 1;
+      }
+      
+      .sub-con{
+      background: none;
+    }
+    .home-text{
+      margin-top: 16%;
+      p{
+        color: white;
+      }
+      strong{
+      span{
+        color: white;
+      }
+    }
+    .btn{
+      .btn2{
+        color: white;
+      }
+    }
+    }
+    
+    }
+    @media screen and (max-width: 425px){
+      .header{
+        background-color: #000000;
+      }
+      .logo{
+        color: white;
+      }
+      #bar{
+        color: white;
+      }
+      .home-text{
+      margin-top: 20%;
+      text-align: center;
+      padding-left: 0;
+      p{
+        color: #000000;
+      }
+      strong{
+        color: white;
+        font-size: 35px;
+        span{
+          color: #000000;
+        }
+      }
+      .btn{
+        margin-top: 16%;
+        display: flex;
+        justify-content: center;
+      
+    }
+    }
+  }
 
-#logo {
-    height: 70px;
-    width: 150px;
-    text-align: center;
-    font-size: 50px;
-    font-weight: 900;
-}
-
-#nav {
-    height: 50px;
-    display: flex;
-}
-
-.nv {
-    margin: 20px;
-    font-size: 15px;
-    font-style: normal;
-    list-style: none;
-    position: relative;
-    color: black;
-    text-decoration: none
-}
-.nv a{
-    text-decoration: none;
-}
   </style>
 </head>
 <body>
-  <header id="header">
-    <div id="logo">JR.</div>
-    <ul id="nav">
-        <li class="nv"><a href="#home">HOME</a></li>
-        <li class="nv"><a href="#about">ABOUT</a></li>
-        <li class="nv"><a href="#skills">SKILLS</a></li>
-        <li class="nv"><a href="#services">SERVICES</a></li>
-        <li class="nv"><a href="#projects">PROJECTS</a></li>
-        <li class="nv"><a href="#blog">BLOG</a></li>
-        <li class="nv"><a href="#contact">CONTACT</a></li>
-    </ul>
-</header>
+  <section class="home-container">
+    <div class="sub-con">
+    <div class="header">
+      <div class="logo">JR.</div>
+      <div class="fas fa-bars"id="bar"></div>
+      <div class="nave">
+            <a href="#home">HOME</a></li>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#contact">SERVICES</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#blog">BLOG</a>
+            <a href="#contact">CONTACT</a>
+      </div>
+    </div>
+    <div class="home-text">
+      <p>HELLO! THIS IS JUNAID</p>
+      <strong>Creative <span>Website</span><br> Developer & Designer</strong>
+      <div class="btn">
+        <a href="https://google.com/" class="btn1">Hire me</a>
+        <a href="www.google.com" class="btn2">Download CV</a>
+      </div>
+    </div>
+  </div>
+  </section>
+  <script>
+    nav = document.querySelector('#bar');
+    nav.onclick = function(){
+      navigations = document.querySelector('.nave');
+      navigations.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
