@@ -54,6 +54,7 @@ body {
     text-align: left;
     padding-top: 13%;
     padding-left: 5%;
+    
     p{
       color: #8aa0f7;
       font-weight: 500;
@@ -223,7 +224,7 @@ body {
     }
 }
 
-/*Services section start from there*/
+/*Skills section start from there*/
 
 .skills-section {
     background-color: #e4f1f7;
@@ -236,6 +237,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         strong {
             font-size: 40px;
@@ -335,6 +337,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         strong {
             font-size: 40px;
@@ -473,6 +476,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         strong {
             font-size: 40px;
@@ -520,6 +524,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         strong {
             font-size: 40px;
@@ -556,6 +561,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         strong {
             font-size: 40px;
@@ -580,6 +586,7 @@ body {
         justify-content: center;
         align-items: center;
         height: 500px;
+        text-align: center;
 
 
         .boxes {
@@ -620,6 +627,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         strong {
             font-size: 40px;
@@ -696,7 +704,7 @@ body {
     .details {
         .rows {
             display: flex;
-            margin: 60px 0 0 30px;
+            margin: 40px 0 0 30px;
 
         }
 
@@ -770,6 +778,7 @@ h4 {
     padding-top: 10px;
     color: #B3B5B8;
     letter-spacing: 1px;
+    text-align: center;
     p{
         text-align: center;
     }

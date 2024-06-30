@@ -1,6 +1,6 @@
 /* responsive.css*/
 /*Tablet responsiveness*/
-@media screen and(max-width: 768px){
+@media (max-width: 768px){
     .header{
         background-color: #000000;
       }
@@ -63,11 +63,112 @@
     }
     }
 
+    .blogs {
+        background-color: #e4f1f7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 200px;
+    
+        .info {
+            padding-top: 20px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+    
+            strong {
+                font-size: 40px;
+            }
+    
+            P:first-child {
+                color: #859cf7;
+                letter-spacing: 2px;
+            }
+    
+            P:last-child {
+                color: #8b8a8a;
+                font-size: 19px;
+                
+    
+            }
+        }
+     /* blogs section */
+        .blogs-info {
+            height: fit-content;
+            flex-direction: column;
+    
+            .boxes {
+                display: flex;
+                flex-direction: column;
+    
+                .below-img {  
+                    width: 100%;
+    
+                }
+            }
+        }
+    }
+    /*skills section*/
+    .skills-section{
+    .skills-info {
+        margin: 5%;
+        margin-top: -2%;
+        display: grid;
+        grid-template-rows: 340px 340px 340px 340px auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;}
+    }
+
+    /*servces section*/
+    .services-section{
+    .details {
+        display: grid;
+        grid-template-rows: 300px 300px 300px 300px auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px 30px;
+        /* Optional: Adds space between the grid items */
+        margin: 0 5%;
+    }
+}
+
+/*Projects section*/
+.projects{
+.project-imgs {
+    margin-bottom: 7%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+}
+/*Footer section start from there*/
+
+footer {
+    display: grid;
+    grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr;    
+    background-color: #232931;
+}
+.col {
+    height: 400px;
+    width: 100%;
+}
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 }
 
 /*Mobile Responsiveness*/
-@media screen and(max-width: 425px) {
+@media(max-width: 425px) {
     
     .header{
         background-color: #000000;
@@ -87,7 +188,7 @@
       }
       strong{
         color: white;
-        font-size: 35px;
+        font-size: 25px;
         span{
           color: #000000;
         }
@@ -191,12 +292,12 @@
         }
     
         .heading1 {
-            font-size: 40px;
+            font-size: 25px;
             margin-top: 10px;
         }
     
         .about-para {
-            font-size: 17px;
+            font-size: 12px;
             letter-spacing: 1px;
             color: rgb(173, 173, 173);
             margin-top: 35px;
@@ -214,7 +315,7 @@
         .lists {
             display: flex;
             line-height: 40px;
-            font-size: 20px;
+            font-size: 15px;
         }
     
         .lists>div:first-child {
@@ -238,7 +339,7 @@
             width:33%;
             display:flex;
             align-items:center;
-            font-size:20px;
+            font-size:15px;
         }
     }
 
@@ -257,7 +358,7 @@
         align-items: center;
 
         strong {
-            font-size: 40px;
+            font-size: 30px;
         }
 
         P:first-child {
@@ -267,79 +368,20 @@
 
         P:last-child {
             color: #7a7a7a;
-            font-size: 19px;
+            font-size: 15px;
             text-align: center;
         }
     }
 
 }
 
+.skills-section{
 .skills-info {
     margin: 5%;
     margin-top: -2%;
-    display: block;
-    padding-bottom: 40px;
-
-    /* Optional: Adds space between the grid items */
-    .grid-boxes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-        margin-top: 30px;
-        .heading {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            font-size: 23px;
-        }
-        .circle{
-            height: 150px;
-            width: 150px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #56b3ff;
-            margin-top: 7%;
-            
-        }
-        .c1{
-            height: 150px;
-            width: 150px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: conic-gradient(transparent 0%, transparent 95%, rgb(231, 231, 231) 95%, rgb(231, 231, 231) 100%);
-        }
-        .c2{
-            height: 135px;
-            width: 135px;
-            background-color: rgb(255, 255, 255);
-            border-radius: 50%;
-            display: flex;
-                justify-content: center;
-                align-items: center;
-        }
-
-        .items {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            margin-top: 4%;
-            .in-item{
-                height: 80%;
-                width: 50%; 
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-    }
-
+    display: flex;
+    flex-direction: column;
+}
 }
 
 /*services section start from here*/
@@ -357,7 +399,7 @@
         text-align: center;
 
         strong {
-            font-size: 40px;
+            font-size: 30px;
             
         }
 
@@ -369,7 +411,7 @@
 
         P:last-child {
             color: #7a7a7a;
-            font-size: 19px;
+            font-size: 12px;
 
         }
 
@@ -393,20 +435,20 @@
                     margin-left: 40px;
 
                     span {
-                        font-size: 30px;
+                        font-size: 24px;
                         color: white;
                     }
                 }
             }
 
             h3 {
-                font-size: 22px;
+                font-size: 17px;
                 margin-top: 10%;
                 margin-left: 10%;
             }
 
             p {
-                font-size: 20px;
+                font-size: 12px;
                 color: #7a7a7a;
                 line-height: 30px;
                 margin-left: 10%;
@@ -452,7 +494,7 @@
         .content {
             h1 {
                 color: white;
-                font-size: 40px;
+                font-size: 30px;
             }
 
             p {
@@ -464,7 +506,7 @@
             div {
                 border-radius: 10px;
                 background-color: white;
-                font-size: 20px;
+                font-size: 15px;
                 width: fit-content;
                 padding: 15px;
                 margin-bottom: 20px;
@@ -496,7 +538,7 @@
         text-align: center;
 
         strong {
-            font-size: 40px;
+            font-size: 30px;
         }
 
         P:first-child {
@@ -506,7 +548,7 @@
 
         P:last-child {
             color: #7a7a7a;
-            font-size: 19px;
+            font-size: 15px;
 
         }
     }
@@ -544,7 +586,7 @@
         text-align: center;
 
         strong {
-            font-size: 40px;
+            font-size: 30px;
             color: white;
         }
 
@@ -555,7 +597,7 @@
 
         P:last-child {
             color: #ffffff;
-            font-size: 19px;
+            font-size: 15px;
 
         }
     }
@@ -570,6 +612,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 
     .info {
         padding-top: 20px;
@@ -580,7 +623,7 @@
         align-items: center;
 
         strong {
-            font-size: 40px;
+            font-size: 30px;
         }
 
         P:first-child {
@@ -590,7 +633,7 @@
 
         P:last-child {
             color: #8b8a8a;
-            font-size: 19px;
+            font-size: 15px;
 
         }
     }
@@ -611,7 +654,7 @@
             justify-content: center;
             align-items: center;
             width: auto;
-            margin: 0 10px 0 10px;
+            
             padding-bottom: 30px;
 
             .img a img {
@@ -647,7 +690,7 @@
         text-align: center;
 
         strong {
-            font-size: 40px;
+            font-size: 30px;
 
         }
 
@@ -658,7 +701,7 @@
 
         P:last-child {
             color: #808080;
-            font-size: 19px;
+            font-size: 15px;
 
         }
     }
@@ -770,7 +813,7 @@ footer {
         border: none;
         background-color: #859cf7;
         margin-left: 5%;
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 
@@ -778,7 +821,7 @@ footer {
     margin-left: 5%;
     color: rgb(184, 184, 181);
     display: block;
-    font-size: 19px;
+    font-size: 15px;
     width: fit-content;
     text-decoration: none;
     margin-top: 19px;
