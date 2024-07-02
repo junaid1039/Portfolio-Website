@@ -1,5 +1,12 @@
 /* responsive.css*/
 /*Tablet responsiveness*/
+@media (max-width: 1024px){
+    .blogs{
+    .blogs-info{
+        flex-wrap: wrap;
+    }
+}
+}
 @media (max-width: 768px){
     .header{
         background-color: #000000;
@@ -172,6 +179,7 @@ footer {
     
     .header{
         background-color: #000000;
+        
       }
       .logo{
         color: white;
